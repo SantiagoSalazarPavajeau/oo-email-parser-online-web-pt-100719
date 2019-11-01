@@ -14,7 +14,7 @@ class EmailAddressParser
   end
   
   def parse
-    @email_addresses.split(/[,|\s]/).reject {|s| s.empty?}
+    @email_addresses.split(/[,|\s]/).reject {|s| s.empty?}.uniq
     # if @email_addresses.include?(",")
     #   @email_addresses.split(", ")
     # else
