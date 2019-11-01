@@ -5,6 +5,6 @@
 
 class EmailAdressParser
   
-  
+  attr
   
 end
