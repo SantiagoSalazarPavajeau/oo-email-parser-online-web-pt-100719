@@ -14,8 +14,11 @@ class EmailAddressParser
   end
   
   def parse
-    @email_addresses.split(", ") 
-    #@email_addresses.split(" ")
+    if @email_addresses.include?(",")
+      @email_addresses.split(", ")
+    else
+      @email_addresses.split(" ")
+    end
     #@binding.pry
   end
   
